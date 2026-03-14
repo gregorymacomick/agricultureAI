@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Using an "Eggshell/Parchment" white instead of cold gray for an African feel */
+  background-color: #FDFCF8; 
+  color: #062C1B; /* Deep Forest Green for primary text */
+}
+
+body {
+  margin: 0;
+  /* Ensure the body takes up the full screen and handles the Dashboard sidebar correctly */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Adding a smooth font for that corporate SaaS look */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optional: Subtle scrollbar to match the green theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #10B981; 
+  border-radius: 10px;
+}
