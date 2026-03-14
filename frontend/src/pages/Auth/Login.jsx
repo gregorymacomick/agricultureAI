@@ -31,7 +31,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await api.post("/auth/login", formData);
+      const response = await api.post("api/auth/login", formData);
       localStorage.setItem("token", response.data.access_token);
       toast.success("Login successful");
       navigate("/dashboard");

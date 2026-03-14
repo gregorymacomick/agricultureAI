@@ -28,7 +28,7 @@ const Register = () => {
 
     try {
 
-      const res = await api.post("/auth/register", formData);
+      const res = await api.post("api/auth/register", formData);
 
       toast.success("Registration successful!");
 
