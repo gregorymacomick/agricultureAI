@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000/api',
+  baseURL: import.meta.env.VITE_API_URL || "https://agricultureai.onrender.com",
 });
 
 // Automatically attach JWT token to every request
