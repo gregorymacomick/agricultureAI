@@ -23,6 +23,7 @@ def create_app(config_name='default'):
             "origins": [
                 "http://localhost:5173",
                 "http://127.0.0.1:5173",
+                "https://agriculture-ai-omega.vercel.app",
                 # Add your production frontend domain later, e.g. "https://your-app.vercel.app"
             ],
             "allow_headers": ["Content-Type", "Authorization"],
